@@ -76,9 +76,7 @@ ul li a:hover::after{
 
 
 #startingFrame{
-    background: url('images/startScreen.jpg');
     width: 100vw;
-    height: 100vh;
 }
 
 
