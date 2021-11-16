@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Petemoss&display=swap');
+*{
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navigationBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.navigationBar img{
+    width: 3.5vw;
+    height: 3.5vw;
+    cursor: pointer;
+    display: none !important;
+}
+
+.navigationBar nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.navigationBar nav ul a{
+    text-decoration: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 0.45vh;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: translateX(0%);
+    background: red;
+    transition: 0.5s all ease-in;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+#clash{
+    color: white;
+    font-size: 4vw;
+}
+#of{
+    color: yellow;
+    font-size: 2.5vw;
+}
+#clans{
+    color: red;
+    font-size: 4.5vw;
+}
+
+/*  */
+
+
+#startingFrame{
+    background: url('images/startScreen.jpg');
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#troopsImageBar{
+    text-align: center;
+    margin-top: 0;
+}
+
+#troopsImageBar img{
+    width: 17%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+#troopsImageBar2{
+    text-align: center;
+    margin-top: 0;
+}
+
+#troopsImageBar2 img{
+    width: 17%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+/*  */
+/*  */
+/*  */
+
+.descContainer{
+    text-align: center;
+}
+
+.descContainer img{
+    width: 96vw;
+}
+
+.picName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1%;
+}
+
+.picName img{
+    width: 10em;
+    filter: invert(50%);
+    cursor: pointer;
+}
+
+.picName h1{
+    font-family: 'Petemoss', cursive;
+    font-weight: bolder;
+    font-size: 5em;
+    text-decoration: underline;
+}
