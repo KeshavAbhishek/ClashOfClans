@@ -123,7 +123,7 @@ ul li a:hover::after{
 }
 
 .picName img{
-    width: 10em;
+    width: 5em;
     filter: invert(50%);
     cursor: pointer;
 }
